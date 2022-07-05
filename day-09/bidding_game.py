@@ -23,4 +23,4 @@ for key in bidders:
     if bidders[key] > bid:
         bid = bidders[key]
         winner = key
-print(f"Winner of this bidding is {winner} with a bid of {bid}")
+print(f"Winner of this bidding is {winner} with a bid of ${bid}")
