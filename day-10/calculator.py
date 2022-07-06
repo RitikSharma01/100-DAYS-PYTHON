@@ -1,5 +1,7 @@
 
-# import art
+from turtle import clear
+import art
+
 
 def add(n1, n2):
     return n1+n2
@@ -26,6 +28,7 @@ calculation = {'+': add,
 
 def calculator():
     'YOu can do all calculation'
+    print(art.logo)
     num1 = float(input("What's the first number? "))
 
     for i in calculation:
@@ -51,6 +54,7 @@ def calculator():
             f"Type 'y' to continue calculating with {result},or type 'n' to exit: ")
     do_reset = input("do you want to calculate more?(yes/no)")
     if do_reset == 'yes':
+        clear
         calculator()
 
 
