@@ -1,12 +1,10 @@
-from turtle import clear
-import game_data
-import art
+from game_data import data
+from art import logo, vs
 import random
 
-print(art.logo)
 game_on = True
 score = 0
-player1 = random.choice(game_data.data)
+player1 = random.choice(data)
 # print(player1)
 
 
@@ -14,14 +12,15 @@ def checking(player1, player2):
     if player1 != player2:
         return
     else:
-        player2 = random.choice(game_data.data)
+        player2 = random.choice(data)
 
 
 while game_on:
+    print(logo)
     print(
         f"Compare A: {player1['name']}, {player1['description']}, {player1['country']}")
     print(art.vs)
-    player2 = random.choice(game_data.data)
+    player2 = random.choice(data)
     checking(player1, player2)
     print(
         f"Against B:{player2['name']}, {player2['description']}, {player2['country']}")
@@ -38,4 +37,3 @@ while game_on:
     else:
         print(f"Sorry, that's wrong. Final score: {score}")
         game_on = False
-    clear
