@@ -1,6 +1,6 @@
-from turtle import Screen, Turtle
+import turtle as t
 import random
-timmy = Turtle()
+timmy = t.Turtle()
 # Draw square
 # i = 1
 # while i <= 4:
@@ -79,19 +79,42 @@ timmy = Turtle()
 #         timmy.right(360/side)
 #     side += 1
 
+# random color
+t.colormode(255)
+
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color = (r, g, b)
+    return color
 
 # draw a random walk
-color = ["purple", "red", 'green', 'yellow', 'blue',
-         'orange', "purple", "red", 'green', 'yellow']
-direction = [0, 90, 180, 270]
-i = 0
-timmy.pensize(15)
-timmy.speed(0)
-while i < 200:
-    timmy.color(random.choice(color))
-    timmy.forward(30)
-    timmy.setheading(random.choice(direction))
-    i += 1
 
-screen = Screen()
+# color = ["purple", "red", 'green', 'yellow', 'blue',
+#          'orange', "purple", "red", 'green', 'yellow']
+
+
+# direction = [0, 90, 180, 270]
+# i = 0
+# timmy.pensize(15)
+# timmy.speed(0)
+# while i < 200:
+#     timmy.pencolor(random_color())
+#     # timmy.pencolor(random.choice(color))
+#     timmy.forward(30)
+#     timmy.setheading(random.choice(direction))
+#     i += 1
+
+
+# draw circle
+timmy.speed(0)
+for i in range(100):
+    timmy.color(random_color())
+    timmy.circle(100)
+    timmy.right(3.6)
+
+
+screen = t.Screen()
 screen.exitonclick()
