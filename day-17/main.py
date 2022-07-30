@@ -5,7 +5,7 @@ question_bank = []
 
 for i in question_data:
     new_question = Question(
-        i[" text"], i['answer'])
+        i["text"], i['answer'])
     question_bank.append(new_question)
 
 
