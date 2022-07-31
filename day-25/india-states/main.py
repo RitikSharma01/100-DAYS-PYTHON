@@ -38,6 +38,7 @@ while len(guessed_state) <= 50:
     elif answer_state in state_name:
         guessed_state.append(answer_state)
         goto_pos_state(answer_state)
+    # guessed_state = [name for name in state_name if answer_state in state_name]
 
 
 def show_all_state():
