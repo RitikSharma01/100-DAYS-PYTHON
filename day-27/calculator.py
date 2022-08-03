@@ -21,7 +21,7 @@ my_label.grid(column=1, row=2)
 
 
 # input
-my_input = Entry(width=15)
+my_input = Entry(width=9, font=('Arial', 20))
 my_input.grid(column=2, row=1)
 my_input.config(border=None)
 
