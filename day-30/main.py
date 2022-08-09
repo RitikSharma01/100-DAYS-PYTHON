@@ -1,28 +1,19 @@
-# # with open('a_file.text') as file:
-# #     file.read()
+
+# exercise 1
+# fruits = ['apple', 'pear', 'orange']
 
 
-# from importlib.resources import open_binary
+# def make_pie(index):
+#     try:
+#         fruit = fruits[index]
+#         print(fruit + 'pie')
+#     except IndexError:
+#         print('fruit pie')
+#     else:
+#         print(fruit+'pie')
 
 
-# try:
-#     file = open('a_foile.text')
-
-# except:
-#     print("there was a problem")
-# # else
-
-fruits = ['apple', 'pear', 'orange']
+# make_pie(4)'''mnjnsdkjnewq'''
 
 
-def make_pie(index):
-    try:
-        fruit = fruits[index]
-        print(fruit + 'pie')
-    except IndexError:
-        print('fruit pie')
-    else:
-        print(fruit+'pie')
-
-
-make_pie(4)
+# faceboo
